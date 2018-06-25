@@ -22,6 +22,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="code\Decorators\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\Hub.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="code\ImageClass\BGRstate.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,10 +47,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="code\QuickSegmentation.py" />
+    <Compile Include="code\Strategies\GetImage_Basic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\Strategies\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="code\" />
     <Folder Include="code\ImageClass\" />
+    <Folder Include="code\Decorators\" />
+    <Folder Include="code\Strategies\" />
     <Folder Include="images\" />
     <Folder Include="images\alteredImages\" />
     <Folder Include="images\test\" />
