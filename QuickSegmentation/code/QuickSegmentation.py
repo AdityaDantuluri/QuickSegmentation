@@ -15,5 +15,4 @@ img = cv2.imread(path)
 
 nImg = Image()
 nImg.getFromClient(img)
-nImg.toRGB()
 nImg.show()
