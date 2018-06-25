@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>QuickSegmentation</Name>
     <RootNamespace>QuickSegmentation</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda27-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,16 +22,36 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="code\ImageClass\BGRstate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\ImageClass\GRAYstate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\ImageClass\HSVstate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\ImageClass\Image.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\ImageClass\RGBstate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="code\ImageClass\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="code\QuickSegmentation.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="code\" />
+    <Folder Include="code\ImageClass\" />
     <Folder Include="images\" />
     <Folder Include="images\alteredImages\" />
     <Folder Include="images\test\" />
     <Folder Include="images\train\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="code\VersionInfo.txt" />
     <Content Include="images\test\101085.jpg" />
     <Content Include="images\test\101087.jpg" />
     <Content Include="images\test\102061.jpg" />
@@ -331,6 +352,9 @@
     <Content Include="images\train\94079.jpg" />
     <Content Include="images\train\95006.jpg" />
     <Content Include="images\train\97017.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda27-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
